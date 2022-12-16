@@ -22,11 +22,11 @@ app.get("/answer_the_question",async(req,res)=>{
     })
 })
 
-// let host;
-// require('dns').lookup(require('os').hostname(), function (err, add, fam) {
-//    host= add
-//    console.log("Your Host is "+add)
-// })
+app.get("/hello",(req,res)=>{
+  res.send({
+    "msg":"hello"
+  })
+})
 
 
 app.listen(5000,()=>{
