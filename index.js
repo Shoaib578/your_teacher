@@ -22,13 +22,13 @@ app.get("/answer_the_question",async(req,res)=>{
     })
 })
 
-let host;
-require('dns').lookup(require('os').hostname(), function (err, add, fam) {
-   host= add
-   console.log("Your Host is "+add)
-})
+// let host;
+// require('dns').lookup(require('os').hostname(), function (err, add, fam) {
+//    host= add
+//    console.log("Your Host is "+add)
+// })
 
-const port = process.env.PORT || 5000;
-app.listen(port,()=>{
+
+app.listen(5000,()=>{
     console.log("running on port"+port)
 })
